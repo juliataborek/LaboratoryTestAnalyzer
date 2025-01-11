@@ -102,6 +102,7 @@ class LeksykonScrapper:
             """
         try:
             norms_selectors = self.page.query_selector_all(".col_0")
+            self.page.screenshot(path="1.png")
             counter = 0 #numer badania
             for norm_selector in norms_selectors:
                 counter +=1
