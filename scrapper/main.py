@@ -1,8 +1,8 @@
 from scrapper import LeksykonScrapper #import klasy LeksykonScrapper z pliku scrapper
 import csv
 
-leksykon = LeksykonScrapper()
-leksykon.scrape()
+leksykon = LeksykonScrapper() #obiekt klasy LeksykonScrapper
+leksykon.scrape() #wywołanie metody scarpe
 
 
 with open("norms.csv", mode="w", encoding="utf-8") as file:
