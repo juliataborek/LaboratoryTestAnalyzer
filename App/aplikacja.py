@@ -6,11 +6,11 @@ import openpyxl
 
 # WCZYTANIE DANYCH
 # wczytanie danych z normami
-data=pd.read_csv(r"App/data/norms_clean.csv",
+data=pd.read_csv("App/data/norms_clean.csv",
                  sep=";")
 
 # wczytanie danych z powiazanymi badaniami oraz specjalistami
-data2=pd.read_excel(r"App/data/norms_clean.csv/norms_powiazania.xlsx",
+data2=pd.read_excel(r"App/data/norms_powiazania.xlsx",
                       engine="openpyxl")
 
 # załadowanie ikony
