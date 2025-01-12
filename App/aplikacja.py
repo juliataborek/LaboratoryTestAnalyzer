@@ -225,12 +225,8 @@ if wiek is not None and plec is not None:
                 # możliwość wprowadzenia wyniku wybranych badań
                 col1, col2 = st.columns([3, 1])
                 with col1:
-                    st.markdown(
-                        f"Wprowadź wynik dla <span style='color:blue; font-weight:bold;'>{row['combined']}</span>:",
-                        unsafe_allow_html=True
-                    )
                     wynik = st.number_input(
-                        f"",
+                        f"Wprowadź wynik dla {row['combined']}:",
                         key=f"wynik_{index}",
                         value=None,
                         min_value=0,
