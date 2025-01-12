@@ -5,7 +5,7 @@ from PIL import Image
 
 # WCZYTANIE DANYCH
 # załadowanie ikony
-im = Image.open(r'C:\Users\julia\Documents\informatyka i ekonometria\semestr 3\inzynieria oprogramowania\ikona_app.jpg')
+im = Image.open(r'App/data/ikona_app.jpg')
 
 # wczytanie danych z normami
 data=pd.read_csv(r"App/data/norms_clean.csv",
