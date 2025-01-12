@@ -229,8 +229,9 @@ if wiek is not None and plec is not None:
                         f"Wprowadź wynik dla {row['combined']}:",
                         key=f"wynik_{index}",
                         value=None,
-                        min_value=0,
-                        max_value=500,
+                        min_value=0.000,
+                        max_value=500.000,
+                        step = 0.001
                     )
                 with col2:
                     st.markdown(
