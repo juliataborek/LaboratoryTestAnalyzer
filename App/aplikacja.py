@@ -6,11 +6,11 @@ import openpyxl
 
 # WCZYTANIE DANYCH
 # wczytanie danych z normami
-data=pd.read_csv(r"App/data/norms_clean.csv",
+data=pd.read_csv("App/data/norms_clean.csv",
                  sep=";")
 
 # wczytanie danych z powiazanymi badaniami oraz specjalistami
-data2=pd.read_excel(r"App/data/norms_clean.csv/norms_powiazania.xlsx",
+data2=pd.read_excel(r"App/data/norms_powiazania.xlsx",
                       engine="openpyxl")
 
 # załadowanie ikony
@@ -225,12 +225,8 @@ if wiek is not None and plec is not None:
                 # możliwość wprowadzenia wyniku wybranych badań
                 col1, col2 = st.columns([3, 1])
                 with col1:
-                    st.markdown(
-                        f"Wprowadź wynik dla <span style='color:blue; font-weight:bold;'>{row['combined']}</span>:",
-                        unsafe_allow_html=True
-                    )
                     wynik = st.number_input(
-                        f"",
+                        f"Wprowadź wynik dla {row['combined']}:",
                         key=f"wynik_{index}",
                         value=None,
                         min_value=0,
