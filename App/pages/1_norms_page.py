@@ -8,11 +8,11 @@ from PIL import Image
 im = Image.open(r'C:\Users\julia\Documents\informatyka i ekonometria\semestr 3\inzynieria oprogramowania\ikona_app.jpg')
 
 # wczytanie danych z normami
-data=pd.read_csv(r"C:\Users\julia\Documents\informatyka i ekonometria\semestr 3\inzynieria oprogramowania\norms_clean.csv",
+data=pd.read_csv(r"App/data/norms_clean.csv",
                  sep=";")
 
 # wczytanie danych z powiazanymi badaniami oraz specjalistami
-data2=pd.read_excel(r"C:\Users\julia\Documents\informatyka i ekonometria\semestr 3\inzynieria oprogramowania\norms_powiazania.xlsx",
+data2=pd.read_excel(r"App/data/norms_clean.csv/norms_powiazania.xlsx",
                       engine="openpyxl")
 
 # przekształcenie danych
