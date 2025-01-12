@@ -13,7 +13,7 @@ data2=pd.read_excel(r"App/data/norms_clean.csv/norms_powiazania.xlsx",
                       engine="openpyxl")
 
 # załadowanie ikony
-im = Image.open(r'C:\Users\julia\Documents\informatyka i ekonometria\semestr 3\inzynieria oprogramowania\ikona_app.jpg')
+im = Image.open(r'App/data/ikona_app.jpg')
 
 # USTAWIENIA STRONY APLIKACJI
 st.set_page_config(page_title="NormaDlaNiej",
