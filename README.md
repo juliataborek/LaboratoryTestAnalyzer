@@ -15,6 +15,7 @@ NormaDlaNiej – narzędzie analizy wyników badań krwi dla kobiet w wieku 18-2
 
 ### c. Krótki opis ze wskazaniem celów
 Nasze oprogramowanie jest narzędziem wspierającym analizę wyników badań krwi u kobiet w wieku 18–26 lat. Głównym celem projektu było dostarczenie użytkowniczkom szybkiej i intuicyjnej informacji zwrotnej o stanie ich zdrowia w kontekście obszarów takich jak prokreacja, endokrynologia oraz stosowanie antykoncepcji, które często dotyczą kobiet w tym wieku.
+
 Strona internetowa umożliwia wprowadzenie wieku oraz płci, a po spełnieniu założeń programu także wybór wybranych badań krwi oraz ich analizę. Na tej podstawie system porównuje dostarczone dane z normami pobranymi ze strony Leksykon.pl i wskazuje, czy wyniki mieszczą się w granicach normy lub czy są poniżej lub powyżej normy. W przypadku wyników odbiegających od normy użytkowniczka otrzymuje rekomendację, do jakiego specjalisty powinna się zgłosić oraz sugestie dotyczące dodatkowych badań krwi, które mogą być związane z uzyskanym wynikiem. Oprogramowanie wspiera samodzielne monitorowanie zdrowia i ułatwia diagnostykę w istotnych dla młodych kobiet obszarach medycznych.
 
 ---
