@@ -148,7 +148,6 @@ Stos technologiczny wykorzystany do uruchomienia systemu:
 | Nr kroku | Krok                                                    | Format         | Oczekiwany rezultat                                         | Wprowadzane dane |
 |----------|---------------------------------------------------------|----------------|-------------------------------------------------------------|------------------|
 | 1        | Otworzenie strony z aplikacją                          |                | Wyświetlana jest informacja o dedykowanej grupie odbiorców systemu oraz pola służące do weryfikacji wieku oraz płci użytkowników. |  |
-|          | Pola służące do weryfikacji wieku oraz płci             |                |                                                             |                  |
 | 2        | Podaj nam swój wiek                                    | Numeryczny     | Pole pozwalające użytkownikowi wpisać wiek                  |  |
 | 3        | Wybierz swoją płeć:                                    | Checkbox       | Pole pozwalające użytkownikowi podać płeć                  | Kobieta; Mężczyzna |
 | 4        | Podanie wieku mniejszego lub równego 0                 |                | Wyświetlenie informacji "Wartość musi być większa lub równa 1" | -1; -123 |
