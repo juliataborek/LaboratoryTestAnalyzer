@@ -1,21 +1,6 @@
 # NormaDlaNiej – narzędzie analizy wyników badań krwi dla kobiet w wieku 18-26 lat
 
-## Spis treści
-1. [Charakterystyka oprogramowania](#charakterystyka-oprogramowania)  
-   a. [Nazwa skrócona](#nazwa-skrócona)  
-   b. [Nazwa pełna](#nazwa-pełna)  
-   c. [Krótki opis ze wskazaniem celów](#krótki-opis-ze-wskazaniem-celów)  
-2. [Prawa autorskie](#prawa-autorskie)  
-   a. [Autorzy](#autorzy)  
-   b. [Warunki licencyjne do oprogramowania](#warunki-licencyjne-do-oprogramowania)  
-3. [Specyfikacja wymagań](#specyfikacja-wymagań)  
-4. [Architektura systemu/oprogramowania](#architektura-systemuoprogramowania)  
-   a. [Architektura rozwoju](#architektura-rozwoju)  
-   b. [Architektura uruchomieniowa](#architektura-uruchomieniowa)  
-5. [Testy](#testy)  
-   a. [Scenariusze testów](#scenariusze-testów)  
-   b. [Sprawozdanie z wykonania scenariuszy testów](#sprawozdanie-z-wykonania-scenariuszy-testów)  
-
+  
 ---
 
 ## 1. Charakterystyka oprogramowania
@@ -27,7 +12,7 @@ NormaDlaNiej
 NormaDlaNiej – narzędzie analizy wyników badań krwi dla kobiet w wieku 18-26 lat.
 
 ### c. Krótki opis ze wskazaniem celów
-Nasze oprogramowanie jest narzędziem wspierającym analizę wyników badań krwi u kobiet w wieku 18–26 lat. Głównym celem projektu było dostarczenie użytkowniczkom szybkiej i intuicyjnej informacji zwrotnej o stanie ich zdrowia w kontekście obszarów takich jak prokreacja, endokrynologia oraz stosowanie antykoncepcji, które często dotyczą kobiet w tym wieku.  
+Nasze oprogramowanie jest narzędziem wspierającym analizę wyników badań krwi u kobiet w wieku 18–26 lat. Głównym celem projektu było dostarczenie użytkowniczkom szybkiej i intuicyjnej informacji zwrotnej o stanie ich zdrowia w kontekście obszarów takich jak prokreacja, endokrynologia oraz stosowanie antykoncepcji, które często dotyczą kobiet w tym wieku.
 Strona internetowa umożliwia wprowadzenie wieku oraz płci, a po spełnieniu założeń programu także wybór wybranych badań krwi oraz ich analizę. Na tej podstawie system porównuje dostarczone dane z normami pobranymi ze strony Leksykon.pl i wskazuje, czy wyniki mieszczą się w granicach normy lub czy są poniżej lub powyżej normy. W przypadku wyników odbiegających od normy użytkowniczka otrzymuje rekomendację, do jakiego specjalisty powinna się zgłosić oraz sugestie dotyczące dodatkowych badań krwi, które mogą być związane z uzyskanym wynikiem. Oprogramowanie wspiera samodzielne monitorowanie zdrowia i ułatwia diagnostykę w istotnych dla młodych kobiet obszarach medycznych.
 
 ---
@@ -53,24 +38,27 @@ Autorzy oprogramowania: **Natalia Machlus, Julia Taborek**.
 4. **Uzupełnianie informacji o specjalistach oraz powiązanych badaniach**:  
    - Dodanie do aplikacji informacji o specjalistach, do których można udać się w celu dalszej diagnostyki po uzyskaniu nieprawidłowego wyniku badania oraz o innych badaniach powiązanych z nieprawidłowymi wynikami.  
 
-5. Przeprowadzenie testów funkcjonalnych scrapera.  
-6. Przygotowanie dokumentacji projektu.  
+5. **Przeprowadzenie testów funkcjonalnych scrapera.**  
+6. **Przygotowanie dokumentacji projektu.**  
 
 #### Julia Taborek
 1. **Przygotowanie interfejsu aplikacji**:  
    - Stworzenie strony startowej aplikacji oraz bocznego menu, które umożliwia nawigację pomiędzy stronami.  
    - Wgranie danych – pliku zawierającego normy badań oraz pliku zawierającego informacje o powiązanych badaniach i specjalistach oraz przygotowanie danych do dalszego użycia:  
      - Ograniczenie się jedynie do wybranych do zaimplementowania badań.  
-     - Usunięcie niepotrzebnych wyrazów z rodzajów badań (np. określeń wskazujących, że norma dotyczy kobiet, ponieważ aplikacja skierowana jest wyłącznie do kobiet).  
-
-2. **Stworzenie formularza** umożliwiającego podanie płci i wieku użytkownika oraz zaimplementowanie walidacji tych cech w celu sprawdzenia, czy użytkownik jest docelowym odbiorcą aplikacji.  
-
-3. **Implementacja funkcji analizy wyników badań**:  
-   - Logika sprawdzania wyników badań.  
-   - Generowanie rekomendacji i analizy.  
-
-4. Przeprowadzenie testów funkcjonalnych interfejsu użytkownika.  
-5. Przygotowanie dokumentacji projektu.  
+     - Usunięcie niepotrzebnych wyrazów z rodzajów badań (np. określeń wskazujących, że norma dotyczy kobiet, ponieważ aplikacja skierowana jest wyłącznie do kobiet).
+   - 	Stworzenie formularza umożliwiającego podanie płci i wieku użytkownika oraz zaimplementowanie walidacji tych cech w celu sprawdzenia, czy użytkownik jest docelowym odbiorcą aplikacji.
+   - 	Utworzenie listy rozwijalnej pozwalającej wybrać badania, których wyniki użytkownik chce wprowadzić oraz zaimplementowanie logiki dla wyboru „Zaznacz wszystkie”, która pozwala na wprowadzenie wyników badań dla wszystkich dostępnych badań.
+   - 	Stworzenie funkcji sprawdzającej, czy wyniki badań są w normie oraz pomocniczych funkcji zwracających górną i dolną granicę normy badania.
+   - 	Zaimplementowanie tabeli przedstawiającej wyniki pacjenta oraz informacji, czy podany wynik jest w normie. W przypadku, gdy wynik nie zawiera się w normie:
+     - 	Wyświetlana jest dodatkowa informacja o specjaliście.
+     - 	Dodawane są informacje o powiązanych badaniach, które mogą być przydatne w dalszej diagnostyce.
+   - 	Przygotowanie informacji zwrotnej o ogólnym rezultacie wyników, podsumowującej dane w czytelny sposób dla użytkownika.
+   - 	Opublikowanie aplikacji za pomocą Streamlit Community Cloud.  
+2. **Uzupełnianie informacji o specjalistach oraz powiązanych badaniach**:  
+   - Dodanie do aplikacji informacji o specjalistach, do których można udać się w celu dalszej diagnostyki po uzyskaniu nieprawidłowego wyniku badania oraz o innych badaniach powiązanych z nieprawidłowymi wynikami. 
+3.	**Przeprowadzenie testów funkcjonalnych interfejsu użytkownika.**
+4.	**Przygotowanie dokumentacji projektu.**
 
 ---
 
