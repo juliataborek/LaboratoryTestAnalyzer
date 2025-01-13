@@ -168,7 +168,7 @@ Stos technologiczny wykorzystany do uruchomienia systemu:
 | 6        | Wybór badania                                            |                                 | Powoduje wyświetlenie się pola, w którym można wprowadzić wynik badania. | Androgeny (Testosteron) |
 | 7        | Wybranie z listy rozwijalnej opcji 'Zaznacz wszystko'     |                                 | Powoduje wyświetlenie się pól, który umożliwiają wprowadzenie wyników dla wszystkich możliwych badań zawartych w systemie. | Zaznacz wszystko |
 
-## W-004, W-005 Wprowadzenie wyników badań
+## W-004 Wprowadzenie wyników badań
 | Nr kroku | Krok                                                    | Format   | Oczekiwany rezultat                                                       | Wprowadzane dane |
 |----------|---------------------------------------------------------|----------|---------------------------------------------------------------------------|------------------|
 | 1        | Otworzenie strony z aplikacją                          |          | Wyświetlana jest informacja o dedykowanej grupie odbiorców systemu oraz pola służące do weryfikacji wieku oraz płci użytkowników. |  |
