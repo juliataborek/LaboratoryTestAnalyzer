@@ -53,9 +53,7 @@ Autorzy oprogramowania: **Natalia Machlus, Julia Taborek**.
    - 	Stworzenie formularza umożliwiającego podanie płci i wieku użytkownika oraz zaimplementowanie walidacji tych cech w celu sprawdzenia, czy użytkownik jest docelowym odbiorcą aplikacji.
    - 	Utworzenie listy rozwijalnej pozwalającej wybrać badania, których wyniki użytkownik chce wprowadzić oraz zaimplementowanie logiki dla wyboru „Zaznacz wszystkie”, która pozwala na wprowadzenie wyników badań dla wszystkich dostępnych badań.
    - 	Stworzenie funkcji sprawdzającej, czy wyniki badań są w normie oraz pomocniczych funkcji zwracających górną i dolną granicę normy badania.
-   - 	Zaimplementowanie tabeli przedstawiającej wyniki pacjenta oraz informacji, czy podany wynik jest w normie. W przypadku, gdy wynik nie zawiera się w normie:
-     - 	Wyświetlana jest dodatkowa informacja o specjaliście.
-     - 	Dodawane są informacje o powiązanych badaniach, które mogą być przydatne w dalszej diagnostyce.
+   - 	Zaimplementowanie tabeli przedstawiającej wyniki pacjenta oraz informacji, czy podany wynik jest w normie.
    - 	Przygotowanie informacji zwrotnej o ogólnym rezultacie wyników, podsumowującej dane w czytelny sposób dla użytkownika.
    - 	Opublikowanie aplikacji za pomocą Streamlit Community Cloud.  
 2. **Uzupełnianie informacji o specjalistach oraz powiązanych badaniach**:  
@@ -76,7 +74,7 @@ Licencja: **CC BY-NC 4.0 (Uznanie autorstwa – Użycie niekomercyjne).**
 |---------------|---------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|----------------|
 | W-001         | Pobieranie norm wyników badań    | Pobranie norm badań ze strony internetowej Leksykon.pl za pomocą scrapera.                                                                            | 1         | Funkcjonalne   |
 | W-002         | Ograniczenie grupy użytkowników | System przeznaczony dla kobiet w wieku 18–26 lat, co weryfikowane jest po przejściu na stronę. W przypadku niespełnienia przez użytkownika wymagań odnośnie płci i wieku wyświetla się informacja o możliwych błędach w interpretacji wyników badań. | 1         | Funkcjonalne   |
-| W-003         | Wybór badań                      | System uwzględnia tylko określone wyniki badań, np. hormonów, morfologii czy prób wątrobowych.                                                           | 2         | Funkcjonalne   |
+| W-003         | Wybór badań                      | System uwzględnia tylko określone wyniki badań, np. hormonów, morfologii czy prób wątrobowych.                                                           | 1         | Funkcjonalne   |
 | W-004         | Wprowadzanie wyników badań       | Użytkownik wprowadza wybrane wyniki badań, które są szczególnie ważne dla kobiet w wieku 18-26 lat.                                                     | 1         | Funkcjonalne   |
 | W-005         | Analiza wyników                  | System sprawdza, czy wprowadzone wyniki są w normie na podstawie norm pobranych ze strony internetowej.                                                | 1         | Funkcjonalne   |
 | W-006         | Wskazanie specjalisty            | W przypadku nieprawidłowych wyników, które nie mieszczą się w ustalonych normach system zaleca wizytę u odpowiedniego specjalisty (np. endokrynolog). | 1         | Funkcjonalne   |
