@@ -53,9 +53,7 @@ Autorzy oprogramowania: **Natalia Machlus, Julia Taborek**.
    - 	Stworzenie formularza umożliwiającego podanie płci i wieku użytkownika oraz zaimplementowanie walidacji tych cech w celu sprawdzenia, czy użytkownik jest docelowym odbiorcą aplikacji.
    - 	Utworzenie listy rozwijalnej pozwalającej wybrać badania, których wyniki użytkownik chce wprowadzić oraz zaimplementowanie logiki dla wyboru „Zaznacz wszystkie”, która pozwala na wprowadzenie wyników badań dla wszystkich dostępnych badań.
    - 	Stworzenie funkcji sprawdzającej, czy wyniki badań są w normie oraz pomocniczych funkcji zwracających górną i dolną granicę normy badania.
-   - 	Zaimplementowanie tabeli przedstawiającej wyniki pacjenta oraz informacji, czy podany wynik jest w normie. W przypadku, gdy wynik nie zawiera się w normie:
-     - 	Wyświetlana jest dodatkowa informacja o specjaliście.
-     - 	Dodawane są informacje o powiązanych badaniach, które mogą być przydatne w dalszej diagnostyce.
+   - 	Zaimplementowanie tabeli przedstawiającej wyniki pacjenta oraz informacji, czy podany wynik jest w normie.
    - 	Przygotowanie informacji zwrotnej o ogólnym rezultacie wyników, podsumowującej dane w czytelny sposób dla użytkownika.
    - 	Opublikowanie aplikacji za pomocą Streamlit Community Cloud.  
 2. **Uzupełnianie informacji o specjalistach oraz powiązanych badaniach**:  
